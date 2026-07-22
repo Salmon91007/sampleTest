@@ -14,7 +14,7 @@ export const Environment = {
     // ZIP: "50000",
     // COUNTRY: "INDIA"
 
-    CARD_NUMBER: process.env.CARD_NUMBER,
+    CARD_NUMBER: process.env.CARD_NUMBER!,
     CARD_EXPIRY: "12/30",
     CARD_CVV: "123",
 
