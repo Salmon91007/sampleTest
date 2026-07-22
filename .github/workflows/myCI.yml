@@ -3,11 +3,11 @@ name: Playwright and API Automation
 on:
   push:
     branches:
-      - capstone/299171-Salman-Benny
+      - main
 
   pull_request:
     branches:
-      - capstone/299171-Salman-Benny
+      - main
 
   workflow_dispatch:
 
