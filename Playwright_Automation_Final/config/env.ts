@@ -18,8 +18,8 @@ export const Environment = {
     CARD_EXPIRY: process.env.CARD_EXPIRY!,
     CARD_CVV: process.env.CARD_CVV!,
 
-    ADDRESS: process.env.CARD_ADDRESS!,
-    CITY: process.env.CARD_CITY!,
+    ADDRESS: process.env.ADDRESS!,
+    CITY: process.env.CITY!,
     STATE: process.env.STATE!,
     ZIP: process.env.ZIP!,
     COUNTRY: process.env.COUNTRY!
