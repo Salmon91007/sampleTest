@@ -15,7 +15,6 @@ export class CheckoutPage {
 
     async verifyCheckoutPage() {
         logger.info("Verify the checkoutpage")
-
         await expect(this.locator.checkHead).toBeVisible();
 
     }
@@ -30,16 +29,16 @@ export class CheckoutPage {
 
         logger.info("Enter Shipping Address");
 
-        await this.locator.address.fill(Environment.ADDRESS);
+        await this.locator.address.fill(Environment.ADDRESS.toString());
 
         logger.info("Enter city");
-        await this.locator.city.fill(Environment.CITY);
+        await this.locator.city.fill(Environment.CITY.toString());
 
         logger.info("Enter zip");
         await this.locator.zip.fill(Environment.ZIP);
 
         logger.info("Enter Country");
-        await this.locator.country.fill("India");
+        await this.locator.country.fill(Environment.COUNTRY);
 
     }
 

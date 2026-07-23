@@ -1,6 +1,12 @@
 import dotenv from "dotenv";
+import path from "path";
+
 
 dotenv.config();
+
+dotenv.config({
+    path: path.resolve(process.cwd(), ".env"),
+});
 
 export const Environment = {
     BASE_URL: process.env.BASE_URL!,
@@ -23,4 +29,4 @@ export const Environment = {
     STATE: process.env.STATE!,
     ZIP: process.env.ZIP!,
     COUNTRY: process.env.COUNTRY!
-};
+}
