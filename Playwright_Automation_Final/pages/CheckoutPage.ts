@@ -15,6 +15,7 @@ export class CheckoutPage {
 
     async verifyCheckoutPage() {
         logger.info("Verify the checkoutpage")
+
         await expect(this.locator.checkHead).toBeVisible();
 
     }
