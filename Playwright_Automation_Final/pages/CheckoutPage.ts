@@ -29,10 +29,10 @@ export class CheckoutPage {
 
         logger.info("Enter Shipping Address");
 
-        await this.locator.address.fill(Environment.ADDRESS.toString());
+        await this.locator.address.fill((Environment.ADDRESS).toString());
 
         logger.info("Enter city");
-        await this.locator.city.fill(Environment.CITY.toString());
+        await this.locator.city.fill((Environment.CITY).toString());
 
         logger.info("Enter zip");
         await this.locator.zip.fill(Environment.ZIP);
