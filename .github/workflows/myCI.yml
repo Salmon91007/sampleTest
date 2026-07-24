@@ -39,6 +39,12 @@ jobs:
       - name: Run UI Tests
         env:
           BASE_URL: ${{ secrets.SALMAN_BASE_URL }}
+          CARD_NUMBER: ${{secrets.CARD_NUMBER}}
+          CARD_EXPIRY: ${{secrets.CARD_EXPIRY}}
+          CARD_CVV: ${{secrets.CARD_CVV}}
+          CITY: ${{secrets.CITY}}
+          ZIP: ${{secrets.ZIP}}
+          COUNTRY: ${{secrets.COUNTRY}}
         run: npx playwright test
 
       - name: Upload UI Report
