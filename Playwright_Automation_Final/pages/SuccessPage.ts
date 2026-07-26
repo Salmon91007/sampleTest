@@ -45,5 +45,21 @@ export class SuccessPage {
 
     }
 
+    //  async getOrderDetails() {
+
+    //     logger.info("Getting Order Details from Success Page");
+
+    //     return {
+    //         productName: (await this.locator.productName.textContent())?.trim() ?? "",
+    //         // total: (await this.locator.total.textContent())?.trim() ?? ""
+    //     };
+    // }
+
+    // async verifyOrderDetails(expectedName: string) {
+
+    //     await expect(this.locator.productName).toHaveText(expectedName);
+    //     // await expect(this.locator.total).toHaveText(expectedTotal);
+    // }
+
 
 }

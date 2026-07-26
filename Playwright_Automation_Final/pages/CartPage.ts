@@ -30,4 +30,11 @@ export class CartPage {
 
     }
 
+    // async getOrderSummary(){
+    //     logger.info("Verify the order summary");
+    //     const name  = (await this.locator.productName.textContent())?.trim() ?? "";
+
+    //     return name;
+    // }
+
 }

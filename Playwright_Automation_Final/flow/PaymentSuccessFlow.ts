@@ -50,6 +50,8 @@ export class PaymentSuccessFlow {
 
         //Validate the product and proceed to checkout
         await this.cartPage.proceedToCheckout();
+        //Store the value of product name here
+        //const name = await this.cartPage.getOrderSummary();
 
         //Verify checkout page and add details
         await this.checkoutPage.verifyCheckoutPage();
@@ -76,6 +78,9 @@ export class PaymentSuccessFlow {
         const orderId = await this.successPage.getOrderNumber();
         logger.info(`Order Created Successfully : ${orderId}`);
 
+        //Verify Order Summary
+        // await this.successPage.verifyOrderDetails(name);
+        // logger.info("Verified Order Summary")
 
     }
 

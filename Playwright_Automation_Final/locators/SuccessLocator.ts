@@ -10,6 +10,8 @@ export class SuccessLocator {
 
     readonly viewOrderHistory: Locator;
 
+    //readonly productName: Locator;
+
     constructor(page: Page) {
 
         this.orderConfirmed = page.getByRole("heading", {name:"Order Confirmed!"});
@@ -20,6 +22,9 @@ export class SuccessLocator {
         this.continueShopping = page.getByRole('link', {name: /continue shopping/i});
 
         this.viewOrderHistory= page.getByRole('link',{name:/view order history/i});
+
+       // this.productName = page.getByText(/ProSound Wireless Headphones/i);
+
 
     }
 

@@ -10,7 +10,12 @@ export class CartLocator {
 
     readonly total: Locator;
 
+    readonly subTotal: Locator;
+
     readonly remove: Locator;
+
+    //readonly productName: Locator;
+    
 
     constructor(page: Page) {
 
@@ -23,6 +28,10 @@ export class CartLocator {
         this.total = page.getByTestId("cart-total");
 
         this.remove = page.getByRole('button', { name: /Remove/i });
+
+        this.subTotal = page.getByTestId('cart-subtotal');
+        
+        //this.productName = page.getByTestId("cart-item-name-prod-001");
 
     }
 
