@@ -1,6 +1,4 @@
 import { logger } from "../logger/Logger";
-
-
 import { HomePage } from "../pages/HomePage";
 import { LoginPage } from "../pages/LoginPage";
 import { SearchResultPage } from "../pages/SearchResultPage";

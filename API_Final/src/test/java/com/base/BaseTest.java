@@ -7,9 +7,7 @@ public class BaseTest {
     @BeforeEach
     void beforeTest(){
 
-        System.out.println(
-                "Starting Test..."
-        );
+        System.out.println("Starting Test...");
 
     }
 

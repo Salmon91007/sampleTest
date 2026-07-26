@@ -29,8 +29,7 @@ export class CheckoutLocator {
 
         this.country = page.getByTestId("shipping-country-input");
         
-        this.continueButton = page.getByRole("button", {
-            name: /continue to payment/i
+        this.continueButton = page.getByRole("button", {name: /continue to payment/i
         });
 
         this.checkoutAs = page.getByText("How would you like to checkout?");

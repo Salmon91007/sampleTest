@@ -1,11 +1,8 @@
 package com.specs;
 
-
-import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import com.config.ConfigManager;
 
 public final class RequestSpec {
 

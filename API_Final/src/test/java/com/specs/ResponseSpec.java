@@ -1,12 +1,10 @@
 package com.specs;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.lessThan;
 
-import com.config.ConfigManager;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
-
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.lessThan;
 
 public class ResponseSpec {
     public static ResponseSpecification success200() {

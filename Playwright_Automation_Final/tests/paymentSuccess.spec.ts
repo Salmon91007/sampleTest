@@ -2,8 +2,7 @@ import { test } from "../fixtures/baseFixtures";
 
 import { PaymentSuccessFlow } from "../flow/PaymentSuccessFlow";
 
-test("Payment Successful", async ({homePage,loginPage,searchResultPage,
-    productPage,
+test("Payment Successful", async ({homePage,loginPage,searchResultPage,productPage,
     cartPage,
     checkoutPage,
     paymentPage,

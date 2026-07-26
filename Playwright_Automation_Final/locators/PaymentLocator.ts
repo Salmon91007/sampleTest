@@ -21,9 +21,7 @@ export class PaymentLocator {
 
         this.cvv = page.getByTestId("payment-cvv");
 
-        this.placeOrder = page.getByRole("button", {
-            name: /Place Order/i
-        });
+        this.placeOrder = page.getByRole("button", {name: /Place Order/i});
 
     }
 

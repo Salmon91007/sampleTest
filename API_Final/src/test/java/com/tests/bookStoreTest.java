@@ -1,8 +1,16 @@
 package com.tests;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+
 import com.base.BaseTest;
 import com.clients.AccountClient;
 import com.clients.BookStoreClient;
+import com.logger.logger;
 import com.models.request.CreateUserRequest;
 import com.models.request.GenerateTokenRequest;
 import com.models.response.Book;
@@ -13,18 +21,11 @@ import com.models.response.GenerateTokenResponse;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import com.logger.logger;
-import org.slf4j.Logger;
 
 public class bookStoreTest extends BaseTest {
 
-    private static final Logger log =
-            logger.getLogger(AccountClient.class);
+    private static final Logger log = logger.getLogger(AccountClient.class);
+
     private final AccountClient accountClient = new AccountClient();
     private final BookStoreClient bookStoreClient = new BookStoreClient();
 
@@ -45,7 +46,8 @@ public class bookStoreTest extends BaseTest {
         // Create request objects
         CreateUserRequest user = new CreateUserRequest(username, password);
 
-        log.info("Create a valid token");        GenerateTokenRequest token = new GenerateTokenRequest(username, password);
+        log.info("Create a valid token");        
+        GenerateTokenRequest token = new GenerateTokenRequest(username, password);
 
         CreateUserResponse userResponse = accountClient.createUser(user);
 
