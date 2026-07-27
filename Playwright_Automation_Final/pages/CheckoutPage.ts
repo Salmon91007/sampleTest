@@ -36,10 +36,10 @@ export class CheckoutPage {
         await this.locator.city.fill((Environment.CITY).toString());
 
         logger.info("Enter zip");
-        await this.locator.zip.fill(Environment.ZIP);
+        await this.locator.zip.fill((Environment.ZIP).toString());
 
         logger.info("Enter Country");
-        await this.locator.country.fill(Environment.COUNTRY);
+        await this.locator.country.fill((Environment.COUNTRY).toString());
 
     }
 

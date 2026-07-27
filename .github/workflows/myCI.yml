@@ -42,6 +42,7 @@ jobs:
           CARD_NUMBER: ${{secrets.CARD_NUMBER}}
           CARD_EXPIRY: ${{secrets.CARD_EXPIRY}}
           CARD_CVV: ${{secrets.CARD_CVV}}
+          ADDRESS: ${{secrets.ADDRESS}}
           CITY: ${{secrets.CITY}}
           ZIP: ${{secrets.ZIP}}
           COUNTRY: ${{secrets.COUNTRY}}
